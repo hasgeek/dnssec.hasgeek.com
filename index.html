@@ -1,0 +1,317 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Workshop on DNS and DNSSEC">
+    <meta name="author" content="HasGeek and friends">
+    <meta name="keywords" content="Workshops, DNS, Domain Name System, DNSSEC, Network, Sysadmin, Devops, Bangalore, Bengaluru, India"> 
+
+    <meta property="og:title" content="Workshop on DNS and DNSSEC"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content="{{ request.url }}"/>
+    <meta property="og:description" content="At the end of this course, participants will be familiar with the Domain Name System and Security Extensions to the Domain Name System (DNSSEC). Participants will configure authoritative and recursive domain name servers and will learn to analyse and debug common misconfigurations and bugs."/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@HasGeek" /> 
+    <meta name="twitter:title" content="Workshop on DNS and DNSSEC" /> 
+    <meta name="twitter:image" content="">
+
+    <title>Workshop on DNS and DNSSEC</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/main.css">  
+
+    <!-- Leaflet CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+
+    <!-- Font Awesome CSS file for social buttons-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="manifest" href="/manifest.json">
+    <!-- onesignal web push -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1601103083538049";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="networkbar" data-siteid="workshops"></div>
+    <header class="header">
+      <div class="content container">
+        <h1 class="text-left title">Workshop on </h1><h1 class="text-left title">DNS and DNSSEC</h1>
+        <p class="text-left date">10&#8211;12 December 2016</p>
+        <p class="text-left venue-text"><a href="https://goo.gl/maps/Mn3ycephnB62" target="_blank">HasGeek, Bangalore</a></p>
+        <p class="text-left price"></p>
+        <div class="text-left">
+          <a class="btn btn-primary btn-transparent btn-lg buy-ticket smooth-scroll" href="#tickets">BUY TICKETS</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Workshop details -->
+    <div class="container workshop-details">
+
+      <div class="intro">
+        <!-- Event Blurb -->
+        <p class="text-left">
+          Why does it take some time to propagate your DNS changes? Why did the world move to Ipv6? How to secure your systems from DNS vulnerabilities? By the end of this course, you will have a strong foundation on how DNS works and you can start boring your friends by talking all about it.
+        </p>
+      </div> 
+
+      <!-- Why attend? -->
+      <div class="section">
+        <h2 class="text-left heading">Why attend?</h2>
+        <p class="text-left para">
+          At the end of this course, participants will be familiar with the Domain Name System and Security Extensions to the Domain Name System (DNSSEC). The course is taught “hands-on” in a virtualized FreeBSD environment using the BIND, NSD and Unbound name server implementations. Participants will configure authoritative and recursive domain name servers and will learn to analyse and debug common misconfigurations and bugs. Who knows, this could be your way to a DNS admin job!
+        </p>
+      </div>
+
+      <!-- Who is it for? -->
+      <div class="section">
+        <h2 class="text-left heading">Who is it for?</h2>
+        <p class="text-left para">
+          Participants should be familiar with Unix-style operating systems. The course is taught on FreeBSD but the environment will be familiar to people with a systems administration background on Linux or Solaris. The virtualized lab environment is hosted on a server in Germany. 
+        </p>
+      </div>  
+
+      <!-- What will you learn? -->
+      <div class="section clearfix">
+        <h2 class="text-left heading">What will you learn?</h2>
+        <div class="col-sm-6 col-xs-12">
+          <ul class="para">
+            <li>
+              <p>Introduction to DNS</p>
+              <ul>
+                <li>Resource records</li> 
+                <li>Delegation</li> 
+                <li>Queries, responses and flags</li>
+                <li>Understanding the data flow</li> 
+              </ul>
+            </li>
+            <li>
+              <p>Querying and debugging the DNS</p>
+              <ul>
+                <li>dig, drill, host, nslookup</li>
+                <li>tcpdump</li>
+              </ul>
+            </li>
+            <li>        
+              <p>Resolving a domain step by step</p>
+            </li>
+            <li>        
+              <p>Configuring authoritative DNS servers</p>
+              <ul>
+                <li>Writing and analysing zonefiles</li>
+                <li>Delegating authority</li>
+                <li>Debugging common zonefile problems</li>
+              </ul>
+            </li>
+            <li> 
+              <p>A very brief introduction to cryptography</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+          <ul class="para">
+            <li>
+              <p>Configuring secondary DNS servers</p>
+              <ul>
+                <li>Setting up TSIG to secure zone transfers</li>
+                <li>Debugging common zone transfer issues</li>
+              </ul>
+            </li>
+            <li>
+              <p>Configuring recursive DNS servers</p>
+            </li>
+            <li>
+              <p>Introduction to DNSSEC</p>
+              <ul>
+                <li>New resource records and flags</li>
+                <li>Validating signatures</li>
+              </ul>
+            </li>
+            <li>
+              <p>Signing your own domains</p>
+              <ul>
+                <li>Keeping signatures valid</li>
+                <li>Key management: best practices</li>
+              </ul>
+            </li>
+            <li>
+              <p>Preserving your sanity</p>
+              <ul>
+                <li>Automatic signing and rollover</li>
+                <li>Brief introduction to OpenDNSSEC</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div> <!-- End of workshop details -->
+
+    <div class="trainer-wrapper">
+      <div class="trainer-bio">
+        <h2 class="text-left heading">About the instructor</h2>
+        <div class="row">
+          <div class="col-sm-2 col-xs-12">
+            <img src="https://imgee.s3.amazonaws.com/imgee/75378f8beabf45cbb506317b8f359a70.jpeg" class="instructor-image">
+          </div>
+          <div class="col-sm-10 col-xs-12">
+            <h3 class="instructor">Philip Paeps (“Trouble”)</h3>
+            <p class="para">Trouble is an independent consultant and contractor based in Belgium. He provides research and development on low-level software and operating systems, particularly in an embedded or real-time context. His main interests are bootloaders, device drivers and high-performance networking. He can also be convinced to teach courses and workshops on a variety of networking-related topics. In his so-called free time, Philip is a FreeBSD committer contributing mainly to the kernel and a member of the FreeBSD security team. He was one of the main organisers of FOSDEM, the largest annual open source software conference in Europe, from the early 2000s until 2015. He denies having any involvement with amateur radio or tabletop role playing games.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container ticketing" id="tickets">
+      <div id="boxoffice-widget"><p class="text-center">Loading...</p></div>
+    </div>
+
+    <div class="testimonials-wrapper clearfix">
+      <div class="testimonials">
+        <div class="col-md-12">
+          <h2 class="text-left heading">Testimonials</h2>
+          <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+            <!--INDICATORS-->
+            <ol class="carousel-indicators carousel-indicators-set">
+              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="testimonial text-left">
+                  "The DNS workshop was very useful as it was hands-on with the labs setup. The instructor had thought thoroughly with the course material and gradually walked through the concepts patiently explaining them one by one. Also the fact that the instructor was running a production DNS network helped a lot as he could explain some of the operational aspects of doing it and answer any question from the audience regarding it."
+                </div>
+                <div class="testimonial-author text-right">
+                  <img src="https://imgee.s3.amazonaws.com/imgee/f3e2dc37fc7d4f028cf0c366435d5799_w150_h150.jpeg" alt="Vinayak" class="img-square" />
+                  - <strong>Vinayak Hegde</strong>, <br>Rainnet Systems
+                </div>
+                <br/><br/>
+              </div>
+              <div class="item">
+                <div class="testimonial text-left">
+                  "Trouble has deep knowledge about the subject and is a master at mixing interesting narratives and hands on sessions to keep the attendees involved. Would recommend to anyone who wants to understand more about DNS/DNSSEC."
+                </div>
+                <div class="testimonial-author text-right">
+                  <img src="https://avatars0.githubusercontent.com/u/223910" alt="Dhananjay" class="img-square" />
+                  - <strong>Dhananjay Balan</strong>, <br>Cliqz.com
+                </div>
+                <br/><br/>          
+              </div>           
+            </div>  
+            <a class="left carousel-control" href="#carousel-testimonials" role="button" data-slide="prev">
+              <span class="icon-prev" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-testimonials" role="button" data-slide="next">
+              <span class="icon-next" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>     
+          </div>
+        </div>
+      </div>
+    </div><!-- EOF testimonials Section -->
+
+    <div class="container venue">
+      <!-- Venue Section -->
+      <div class="text-center">
+        <h2>Venue</h2>
+        <img class="venue-pic" src="https://images.hasgeek.com/embed/file/9bb9057889484d72b21f988fb3ed1692">
+      </div>
+
+      <div class="venue-location">
+        <div class="col-sm-4 col-sm-offset-2 col-sm-12">
+          <p class="address-description">
+            <strong>HasGeek House</strong>
+          </p>
+          <p class="address">
+            #2699, 19th Main, 5th Cross<br/>
+            Behind Carlton tower<br/>
+            Indiranagar HAL 2nd Stage<br/>
+            Bangalore - 560008<br/>
+          </p>
+        </div>
+        <div class="col-sm-4 col-sm-12">
+          <div id="map" class="leaflet-map"></div>
+        </div> 
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="logo-wrapper">
+        <img src="https://hasgeek.com/static/img/hg-banner.png" class="hasgeek-logo" alt="HasGeek">
+      </div>
+      <div class="about">
+        <p><a href="https://hasgeek.com" target="_blank">HasGeek</a> creates discussion spaces for geeks. Come to our events to meet like-minded people, learn new things and discover new opportunities. We operate <a href="https://hasjob.co/" target="_blank">Hasjob</a>, hang out on a <a href="https://friends.hasgeek.com/" target="_blank">Slack channel</a>, and publish our code. Our activities reach thousands of developers every month. <a href="https://talkfunnel.com/" target="_blank">Speak at our events</a>, or <a href="http://eepurl.com/duGmH" target="_blank">sign up to be notified</a> when we do one. Watch videos from past events on <a href="https://hasgeek.tv/" target="_blank">HasGeek TV</a>.</p>
+      </div> 
+    </footer>
+    <!-- necessary for HasGeek networkbar -->
+    <script src="https://api.hasgeek.com/1/networkbar/networkbar.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- necessary for loading maps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+      };
+
+      return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "96d7bb76-b5ff-4772-8767-227ab21eb68a",
+        autoRegister: false,
+        persistNotification: false,
+        notifyButton: {
+          enable: true /* Set to false to hide */
+        }
+      }]);
+    </script>
+  </body>
+</html>
